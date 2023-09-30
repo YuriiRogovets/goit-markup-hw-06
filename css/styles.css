@@ -44,11 +44,28 @@ img {
 }
 
 .container {
-    max-width: 1158px;
-    margin: 0 auto;
-    padding: 0 15px;   
+    min-width: 320px;
+    max-width: 320px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .container {
+        max-width: 1158px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
 /* Header */
 .header {
     border-bottom: 1px solid var(--c-accent);
@@ -407,21 +424,25 @@ padding: 32px 16px;
 }
 
 .footer {
-    padding: 100px 0;
+    padding: 96px 0;
+    width: 100%;
     background-color: var(--c-hero-bcg);
 }
 
 .footer-inner {
     display: flex;
-    align-items: baseline;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 72px 24px; 
+
 }
 
 .footer-social {
-    margin-right: 80px;
+    margin: 0 auto;
 }
 
 .footer-slogan {
-    margin-right: 120px;
+
 }
 
 .footer-logo {
@@ -446,6 +467,7 @@ padding: 32px 16px;
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    text-align: left;
 }
 
 .footer-social-text {
@@ -497,17 +519,20 @@ padding: 32px 16px;
 
 .footer-form {
     display: flex;
-    gap: 24px;
+    gap: 16px;
+    flex-wrap: wrap;    
 }
 .footer-sing-label {
+    width: 100%;
     color: var(--c-bcg-wite);
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em; 
+    margin: 0 auto;
 }
 
 .footer-input {
-    width: 264px;
+    width: 288px;
     height: 40px;
     border: 1px solid var(--c-bcg-wite);
     background-color: transparent;
@@ -518,6 +543,7 @@ padding: 32px 16px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;    
     color: var(--c-bcg-wite);
+    opacity: 0.6;
 }
 
 .footer-input::placeholder {
@@ -544,11 +570,53 @@ padding: 32px 16px;
     cursor: pointer;
     border: none;
     border-radius: 4px;   
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .footer-button-icon {
     margin-left: 16px;
     fill: var(--c-bcg-wite);
+}
+
+@media screen and (min-width: 768px) {
+    .footer-inner {
+        padding-left: 108px;
+        padding-right: 108px;
+        text-align: left;
+        gap: 24px;
+    }
+
+    .footer-form {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 24px;
+   }
+    .footer-input {
+        width: 264px;
+    }
+
+    .footer-social {
+        margin-left: 0;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .footer-inner {
+        padding-left: 15px;
+        padding-right: 15px;
+        flex-wrap: nowrap;
+        gap: 0;
+    
+    }
+
+    .footer-slogan {
+        margin-right: 120px;
+    }
+
+    .footer-social {
+        margin-right: 80px;
+    }
 }
 
 .backdrop {
