@@ -52,7 +52,6 @@ img {
     margin-right: auto;
 }
 
-
 @media screen and (min-width: 768px) {
     .container {
         max-width: 768px;
@@ -184,27 +183,27 @@ img {
 
 .hero-section {
     background-color: var(--c-hero-bcg);
-    padding: 188px 0;
+    padding: 72px 0;
     max-width: 1440px;
     margin: 0 auto;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
      rgba(46, 47, 66, 0.7)),
-      url(../images/people-office.jpg);
+      url(../images/hero/Dark-bg_mob.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-
 }
 
 .hero-title {
-    margin: 0 auto 48px;
-    max-width: 496px;
+    margin: 0 auto 72px;
+    max-width: 288px;
     color: #FFF;
     text-align: center;
-    font-size: 56px;
+    font-size: 36px;
     font-weight: 700;
-    line-height: 1.07;
+    line-height: 1.11;
     letter-spacing: 0.02em;
+    text-transform: capitalize;
     }
 
 .hero-button {
@@ -225,6 +224,69 @@ img {
 
 .hero-button:hover, :focus {
     background-color: var(--c-pressed-state);
+}
+
+@media only screen and (min-resolution: 192dpi) {
+    .hero-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)),
+                url(../images/hero/Dark-bg_mob@2x.jpg)
+        }
+}
+
+@media screen and (min-width: 768px) {
+    .hero-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/hero/Dark-bg_tab.jpg);
+    }
+
+    .hero-title {
+        margin: 0 auto 36px;
+        max-width: 496px;
+        font-size: 56px;
+        line-height: 1.07;
+        text-transform: none;
+    }
+}
+
+@media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
+    .hero-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/hero/Dark-bg_tab@2x.jpg)
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .hero-section {
+        padding: 188px 0;
+        max-width: 100%;
+        margin: 0 auto;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/hero/Dark-bg_desk.jpg);
+    }
+
+    .hero-title {
+        margin: 0 auto 36px;
+        max-width: 496px;
+        font-size: 56px;
+        line-height: 1.07;
+        text-transform: none;
+    }
+
+    .hero-title {
+        margin: 0 auto 48px; 
+    }
+}
+
+@media only screen and (min-width: 1158px) {
+    .hero-section {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)),
+                url(../images/hero/Dark-bg_desk@2x.jpg);
+     }
 }
 
 /*feature-section*/
