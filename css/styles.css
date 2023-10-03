@@ -41,6 +41,8 @@ h6 {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .container {
@@ -548,9 +550,14 @@ img {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-image {
+.portfolio-image-box {
     position: relative;
     overflow: hidden;  
+}
+
+.portfolio-image {
+    width: 288px;
+    height: 280px;
 }
 
 .portfolio-ad {
@@ -599,6 +606,11 @@ padding: 32px 16px;
     .portfolio-item {
         width: calc((100% - 24px) / 2);
     }
+
+    .portfolio-image {
+        width: 356px;
+        height: 300px;
+    }
 }
 
 @media screen and (min-width: 1158px) {
@@ -606,6 +618,10 @@ padding: 32px 16px;
         width: calc((100% - 48px) / 3);
     }
 
+.portfolio-image {
+    width: 360px;
+    height: 300px;
+    }
 }
 
 .footer {
