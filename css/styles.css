@@ -344,10 +344,6 @@ img {
     display: block;  
 }
 
-.feature-item:not(:last-child) {
-    margin-bottom: 72px;
-}
-
 .feature-box-icon {
     display: flex;
     align-items: center;
@@ -378,6 +374,12 @@ img {
     margin-top: 8px;
 }
 
+@media screen and (max-width: 767.98px) {
+    .feature-item:not(:last-child) {
+        margin-bottom: 72px;
+    }
+}
+
 @media screen and (max-width: 1157.98px) {
     .feature-box-icon {
         display: none;
@@ -402,6 +404,10 @@ img {
 }
 
 @media screen and (min-width: 1158px) {
+    .section {
+            padding: 120px 0;
+        }
+
     .feature-list {
         display: flex;
         flex-wrap: wrap;
@@ -430,7 +436,7 @@ img {
 /*team-section*/
 .team-section {
     background-color: var(--c-light);color: var(--c-hero-bcg);
-    padding: 120px 0;
+    padding: 96px 0;
 }
 
 .team-title {
@@ -446,7 +452,9 @@ img {
 
 .team-list {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    gap: 72px;
+    margin: 0 12px;
 }
 
 .card-employees {
@@ -465,7 +473,6 @@ img {
     text-align: center;
     margin-bottom: 8px;
     font-size: 20px;
-    font-style: normal;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
@@ -505,6 +512,26 @@ img {
 
 .footer-icon {
     fill: var(--c-light);
+}
+
+@media screen and (min-width: 768px) {
+    .team-list {
+        gap: 64px 24px;
+        justify-content: center;
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .team-section {
+        padding: 120px 0;
+    }
+    
+    .team-list {
+        gap: 64px 24px;
+        justify-content: center;
+    }
+
 }
 
 /*portfolio-section*/
