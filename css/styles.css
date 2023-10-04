@@ -190,6 +190,8 @@ img {
     border-radius: 50%;
 }
 
+
+
 @media screen and (max-width: 767.98px) {
     .nav-link {
         display: none;
@@ -206,6 +208,21 @@ img {
     }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1157.98px) {
+    .mail-phone {
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
+        padding: 0;
+    }
+
+    .contact-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    }
+}
+
 @media screen and (min-width: 1158px) {
     .contact-list {
         display: flex;
@@ -213,6 +230,8 @@ img {
         gap: 40px;
     }
 }
+
+
 
 /* Hero section */
 
@@ -393,7 +412,7 @@ img {
     .feature-list {
         display: flex;
         flex-wrap: wrap;
-        gap: 24px;
+        gap: 72px 24px;
         margin: 0;      
     }
 
@@ -785,7 +804,7 @@ padding: 32px 16px;
         padding-left: 108px;
         padding-right: 108px;
         text-align: left;
-        gap: 24px;
+        gap: 72px 24px;
     }
 
     .footer-form {
